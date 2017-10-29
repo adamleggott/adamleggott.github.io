@@ -10,7 +10,44 @@
     </head>
 
     <body>
+
         <h1>MAVO</h1>
+
+        <div mv-app="mavoTest" mv-storage="local" mv-autosave="0">
+            My first Mavo app!
+
+            <!-- basic mv text editing -->
+            <div>
+                <label>
+                    Email:
+                    <input type="email" property="email" value="foo@example.com" />
+                </label>
+                <label>
+                    Message:
+                    <textarea property="message">
+                        Edit the form and notice how the values persist after you refresh!
+                    </textarea>
+                </label>
+            </div>
+
+            <!-- mv-multiple test -->
+            <article property="beer" mv-multiple>
+                <div style="background-color: [color];">
+                    <h1 property="name">Tonkoko</h1>
+                    First drank: <time property="firstdrank" datetime="2014-06-01">1 Jun 2017</time><br />
+                    Brewery: <span property="brewery">Brew York</span>
+                    <p>Rating for [name]: [strength/10]/10</p>
+                    <input type="range" property="strength" title="[strength]%" />
+                    <p>Control colour:</p>
+                    <input type="range" property="hue" max="360" />
+                    <input type="range" property="saturation" />
+                    <input type="range" property="lightness" />
+                    <input property="color" readonly value="hsl([hue], [saturation]%, [lightness]%)" />
+                </div>
+            </article>
+
+        </div><!-- END Mavo app -->
+
     </body>
 
 </html>
