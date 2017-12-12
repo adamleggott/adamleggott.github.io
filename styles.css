@@ -45,6 +45,9 @@ div.pub p span, div.pub p a {
     display: inline-block;
     margin-left: 10px;
 }
+div.pub p a {
+    color: #00F;
+}
 
 /* Icons */
 @font-face {
