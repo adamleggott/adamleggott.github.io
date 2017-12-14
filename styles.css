@@ -125,3 +125,6 @@ div.pub p a {
 .icon-twitter:before {
   content: "\ea96";
 }
+.icon-mobile:before {
+  content: "\e958";
+}
