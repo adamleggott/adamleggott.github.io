@@ -8,4 +8,18 @@ jQuery(document).ready(function(){
     jQuery(this).find('i').toggle();
   });
 
+  jQuery('body').on('click', '.footer .collapse', function(){
+    jQuery('.pub-by-day').each(function(){
+      jQuery(this).slideUp();
+      jQuery('div.day i.icon-circle-up').hide();
+      jQuery('div.day i.icon-circle-down').show();
+    });
+  });
+
+  jQuery('body').on('click', '.footer .totop', function(){
+    jQuery('html,body').animate({
+      scrollTop: 0
+    }, 700);
+  });
+
 });

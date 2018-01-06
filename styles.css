@@ -5,10 +5,13 @@ body {
 h2, h3, h4 {
     margin: 5px 0;
 }
-.main-wrap {
+.main-wrap, .footer {
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
+}
+.main-wrap {
+  margin-bottom: 4em;
 }
 div.day {
     background: #FFF;
@@ -61,6 +64,25 @@ div.pub p span, div.pub p a {
 div.pub p a {
     color: #00F;
 }
+.footer-wrap {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #5d35ff;
+  color: #FFF;
+  font-weight: 600;
+}
+.fixed {
+  position: fixed;
+}
+.footer {
+  padding: 1em;
+}
+.footer span {
+  display: inline-block;
+  min-width: 150px;
+  cursor: pointer;
+}
 
 /* Icons */
 @font-face {
@@ -107,6 +129,12 @@ div.pub p a {
 .icon-clock:before {
   content: "\e94e";
 }
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-shrink:before {
+  content: "\e98c";
+}
 .icon-trophy:before {
   content: "\e99e";
 }
@@ -115,6 +143,9 @@ div.pub p a {
 }
 .icon-info:before {
   content: "\ea0c";
+}
+.icon-arrow-up:before {
+  content: "\ea3a";
 }
 .icon-circle-up:before {
   content: "\ea41";
@@ -139,7 +170,4 @@ div.pub p a {
 }
 .icon-twitter:before {
   content: "\ea96";
-}
-.icon-mobile:before {
-  content: "\e958";
 }
