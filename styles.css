@@ -1,3 +1,7 @@
+body {
+  background: #ffd45a;
+  font-size: 1em;
+}
 h2, h3, h4 {
     margin: 5px 0;
 }
@@ -7,15 +11,16 @@ h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
 }
 div.day {
-    background: #CCC;
-    padding: 0.5rem;
+    background: #FFF;
+    padding: 1rem 0.5rem;
     cursor: pointer;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
 }
 div.day i {
     margin-left: auto;
+    font-size: 30px;
 }
 i.icon-circle-up {
     display: none;
@@ -31,19 +36,27 @@ div.pub {
     background: #EEE;
     padding: 0.5rem;
 }
+div.pub h3 {
+  @media screen and (min-width: 701px) {
+    font-size: 18px;
+  }
+}
 div.pub p {
     display: flex;
 }
 div.pub p.quickinfo {
     float: left;
-    width: 33%;
+    width: 90px;
+}
+div.pub p.quickinfo:nth-of-type(3) {
+  width: calc(100% - 180px);
 }
 div.pub p:not(.quickinfo) {
     clear: both;
 }
 div.pub p span, div.pub p a {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 div.pub p a {
     color: #00F;
@@ -70,7 +83,9 @@ div.pub p a {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 20px;
+  @media screen and (min-width: 701px) {
+    font-size: 20px;
+  }
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
