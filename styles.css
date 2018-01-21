@@ -38,6 +38,7 @@ div.pub {
     margin-bottom: 5px;
     background: #EEE;
     padding: 0.5rem;
+    position: relative;
 }
 div.pub h3 {
   @media screen and (min-width: 701px) {
@@ -64,6 +65,20 @@ div.pub p span, div.pub p a {
 div.pub p a {
     color: #00F;
 }
+div.pub div.call {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+div.pub div.call a {
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (min-width: 701px) {
+  div.pub div.call {
+    display: none;
+  }
+}
 .footer-wrap {
   width: 100%;
   bottom: 0;
@@ -82,6 +97,10 @@ div.pub p a {
   display: inline-block;
   min-width: 150px;
   cursor: pointer;
+  margin-right: 30px;
+}
+.footer span i {
+  margin-right: 10px;
 }
 
 /* Icons */
