@@ -63,7 +63,7 @@ div.pub p span, div.pub p a {
     margin-left: 5px;
 }
 div.pub p a {
-    color: #00F;
+    color: #5d35ff;
 }
 div.pub div.call {
   position: absolute;
@@ -79,6 +79,21 @@ div.pub div.call a {
     display: none;
   }
 }
+.contact-wrap p {
+  font-weight: 600;
+  margin: 10px 0;
+}
+.contact-wrap p a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+.contact-wrap p a i {
+  margin-right: 10px;
+}
+.contact-wrap p a span {
+  text-decoration: underline;
+}
 .footer-wrap {
   width: 100%;
   bottom: 0;
@@ -92,6 +107,7 @@ div.pub div.call a {
 }
 .footer {
   padding: 1em;
+  display: flex;
 }
 .footer span {
   display: inline-block;
@@ -150,6 +166,9 @@ div.pub div.call a {
 }
 .icon-mobile:before {
   content: "\e958";
+}
+.icon-mail:before {
+  content: "\e945"
 }
 .icon-shrink:before {
   content: "\e98c";
